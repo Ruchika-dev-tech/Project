@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+ 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+  color:white;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+ 
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 40%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+ .navbar{
+width:102%;
+height:60px;
+font-size:25px;
+background-color:black;
+top:opx;
+} 
+.navbar li:hover{
+background-color:#05426C;
+}
+</style>
+</style>
+</head>
+<body style="background-color:#05426C">
+<!--navbar --->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" style="font-size:25px" href="#">LIBRARY WEBSITE</a>
+    </div>
+    <ul class="nav navbar-nav">
+     <li ><a href="home.html">Home</a></li>
+      
+      <li><a href="aboutus.html">About us</a></li>
+      <li class="active"><a href="bookgallry.html">Book</a><li>
+	  <li><a href="photogllry.html">Gallery</a><li>
+	  <li><a href="contact us.html">Contact us</a></li>
+	  <li><a href="feedback.html">Feedback</a><li>
+	  
+    </ul>
+	<ul class="nav navbar-nav navbar-right">
+      <li><a href="create.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="formlogin.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	  </ul>
+  </div>
+</nav>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>LIBRARY BOOKS</h1>
+<hr>
+
+<h2 style="color:white">BOOKS GALLERY</h2>
+
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+
+      <img src="acdm3.jpg" alt="Mountains" style="width:100%">
+      
+      <p>Quantitative aptitude book for competitive exams</p><br>
+	  <button class ="btn btn-primary btn-block">Download</button>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="acad1.jpg" alt="Lights" style="width:100%">
+     
+      <p><b>History and civics for class 10th</b></p>
+	  <button class ="btn btn-primary btn-block">Download</button>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="acdm2.jpg" alt="Nature" style="width:100%">
+      
+      <p>science and technology book for Class 10th</p>
+	  <button class ="btn btn-primary btn-block">Download</button>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="che.jpg" alt="Mountains" style="width:100%">
+      
+      <p>Chemistry Part 2 For Class 10th</p>
+	  <button class ="btn btn-primary btn-block">Download</button>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="phy.jpg" alt="Lights" style="width:100%">
+      
+      <p>physics book For Class 10th.</p>
+	  <button class ="btn btn-primary btn-block">Download</button>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="english.jpg" alt="Lights" style="width:100%">
+      
+      <p>hemistry Part 2 For Class 10th</p>
+	  <button class ="btn btn-primary btn-block">Download</button>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="bio.jpg" alt="Lights" style="width:100%">
+      
+      <p>english book for class 12</p>
+	  <button class ="btn btn-primary btn-block">Download</button>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="novel1.jpg" alt="Lights" style="width:100%">
+      
+      <p>novel</p>
+	  <button class ="btn btn-primary btn-block">Download</button>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="novel2.jpg" alt="Lights" style="width:100%">
+      
+      <p>Novel for adults.</p>
+	  <button class ="btn btn-primary btn-block">Download</button>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="collin.jpg" alt="Lights" style="width:100%">
+      
+      <p>Collins easy Learning French</p>
+	  <button class ="btn btn-primary btn-block">Download</button>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="eng.jpg" alt="Lights" style="width:100%">
+      
+      <p>Engineering mathamatics book for BE</p>
+	  <button class ="btn btn-primary btn-block">Download</button>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="harry.jpg" alt="Lights" style="width:100%;">
+      
+      <p>Harry potter book</p>
+	  <button class ="btn btn-primary btn-block">Download</button>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>

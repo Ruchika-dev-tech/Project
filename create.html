@@ -1,0 +1,166 @@
+<html>
+<head>
+ <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("book2.jpg");
+
+  min-height: 100%;
+  width:100%;
+  bottom:20px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 600px;
+  height:100%;
+  padding: 16px;
+  background-color: white;
+}
+
+
+ 
+  
+  .form-group{
+  color:blue;
+  }
+  .card-title{
+  color:orange;
+  
+  }
+  
+  
+	  
+.form-control
+{
+padding:15px;
+width:500px;
+height:10px;
+}
+.btn{
+padding:10px;
+height:35px;
+width:400px;
+float:left;
+color:black;
+background-color:orange;
+
+}
+
+
+.navbar{
+width:100%;
+height:60px;
+font-size:25px;
+color:black;
+background-color:#FFFF00;
+} 
+.navbar li:hover{
+background-color:white;
+}
+
+
+</style>
+</head>
+<body>
+
+ <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+	      <a class="navbar-brand" href="#"><img src="logo2.jpg" height="30px"width="40px"></a>
+
+      <a class="navbar-brand" href="#"><b>LIBRARY WEBSITE</b></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="contact us.html">Contact us</a></li>
+      <li><a href="aboutus.html">About us</a></li>
+      <li><a href="bookgallry.html">Book</a><li>
+	  <li><a href="photogllry.html">Gallery</a><li>
+	  <li><a href="feedback.html">Feedback</a><li>
+    </ul>
+	<ul class="nav navbar-nav navbar-right">
+      <li><a href="create.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="formlogin.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	  </ul>
+  </div>
+  </div>
+</nav>
+
+
+   
+   
+   <div class="bg-img">
+  <form action="/action_page.php" class="container">
+  <h2 class="card-title text-center"><b>User Registration Page</b></h2>
+  
+   
+	     
+		 <div class="form-group">
+             <label for="firstname">First name</label>
+			 <input type="text" class="form-control form-control s-m"id="firstname" placeholder="first name" required> 
+			 </div>
+             <div class="form-group">
+             <label for="lasttname">Last name</label>
+			 <input type="text"class="form-control form-control s-m" id="lasttname" placeholder="Last name" required> 
+			 </div>
+			 <div class="form-group">
+             <label for="email"> Email</label>
+			 <input type="text" class="form-control form-control s-m" id="email" placeholder="123@gmail.com" required> 
+			 </div>
+			 <div class="form-group">
+			 <label for="mobileno">Mobile no</label>
+			 <input type="tel" class="form-control form-control s-m"id="mobileno" placeholder="mobile no" required> 
+			 </div>
+             <div class="form-group">
+             <label for="Password">Password</label>
+			 <input type="text"class="form-control form-control s-m" id="password" placeholder="password" required> 
+			 </div>
+			 <div class="form-group">
+             <label for="confirmpassword"> Confirm Password</label>
+			 <input type="text" class="form-control form-control s-m" id="confirmpassword" placeholder="confirm password"> 
+			 <div class="form-group">
+             <label for="checkbox"> Which type of books do you like?</label><br>
+			 <input type="checkbox" id="book1" name="book1" value="horror">
+  <label for="book1"> Horror books</label><br>
+  <input type="checkbox" id="book2" name="book2" value="Academic">
+  <label for="book2"> Academic</label><br>
+  <input type="checkbox" id="book3" name="book3" value="Historic">
+  <label for="book3"> Historical books</label><br><br>
+  <button type="submit" class="btn btn-primary btn-block"><a href="re2.html">Submit</a></button>
+ 
+			 </div>
+			 </form>
+			 </div>
+			 </div>
+			  
+
+
+</body>
+
+</html>
+

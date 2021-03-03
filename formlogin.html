@@ -1,0 +1,109 @@
+<html>
+<head>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta charset="utf-8">
+  
+  <style>
+  html,body { 
+	height: 100%;	
+}
+
+
+.global-container{
+	height:100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image:url('hd1.jpg');
+	background-repeat: no-repeat, repeat;
+
+  height: 1000px;
+  background-position: center;
+  background-size: cover;
+  position: relative
+    
+ 
+}
+
+form{
+	padding-top: 20px;
+	font-size: 20px;
+	margin-top: 30px;
+	
+	  
+	 
+	  
+}
+
+.card-title{ font-weight:300; 
+
+
+}
+
+.btn{
+	font-size: 14px;
+	margin-top:20px;
+}
+
+
+.login-form{ 
+	width:330px;
+	margin:20px;
+
+}
+
+.sign-up{
+	text-align:center;
+	padding:20px 0 0;
+}
+
+.alert{
+	margin-bottom:-30px;
+	font-size: 13px;
+	margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+
+
+
+<div class="global-container">
+	<div class=" login form">
+	<div class="card-body">
+		<h1 class="card-title text-center">Library Login Form</h1>
+		<div class="card-text">
+			<!--
+			<div class="alert alert-danger alert-dismissible fade show" role="alert">Incorrect username or password.</div> -->
+			<form>
+				<!-- to error: add class "has-danger" -->
+				<div class="form-group">
+				
+				<label for="exampleInputEmail1">Email address</label>
+					
+					
+					<input type="email" class="form-control form-control-sm" id="exampleInputEmail1" placeholder="123@gmail.com "aria-describedby="emailHelp">
+				</div>
+			
+				<div class="form-group">
+					<label for="exampleInputPassword1">Password</label>
+					<a href="forget.html" style="float:right;font-size:12px";>Forgot password?</a>
+					<input type="password" class="form-control form-control-sm"placeholder="Password" id="exampleInputPassword1">
+				</div>
+				<button type="submit" class="btn btn-primary btn-block">Sign in</button>
+				
+				<div class="sign-up">
+					Don't have an account? <a href="create.html">Create One</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>
